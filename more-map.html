@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const friends = ['Tom Hanks', 'Tom Cruse','Tom Brady','Tom and jarry'];
+        const flengths =friends.map(friend => friend.length);
+        console.log(flengths);
+        const products =[
+            {name:'water bottle', price:50, color:'yellow'},
+            {name:'mobile phone', price:1500, color:'black'},
+            {name:'smart watch', price:300, color:'black'},
+            {name:'sticky note', price:30, color:'pink'},
+            {name:'water glass', price:3, color:'whit'},
+
+        ]
+        const productName = products.map(product => product.name);
+        const productPrices = products.map(product => product.price);
+        console.log(productName);
+        console.log(productPrices);
+        products.map(product =>console.log(product));
+        products.forEach(product => console.log(product.color));
+    </script>
+</body>
+</html>
