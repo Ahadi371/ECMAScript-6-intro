@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class support{
+            name;
+            designation = 'Support Web dev';
+            address = 'BD';
+            constructor(name,address){
+                 this.name =name;
+                 this.address = address;
+            }
+            startSession(){
+                console.log(this.name, 'start a support session');
+            }
+            // startSession(){
+            //    console.log('start a support session');
+            // }
+        }
+        const aamir =new support('Aamir khan','BD');
+        const hasan =new support('Hasan', 'Dubai');
+        const sharuk =new support('SRK', 'in');
+        const salman =new support('Salman', 'Dubai');
+
+        console.log(aamir,hasan, sharuk, salman, );
+        // console.log(hasan);
+        aamir.startSession();
+        hasan.startSession()
+    </script>
+</body>
+</html>
