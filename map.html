@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const numbers = [4, 6, 8,10];
+        const output2 = [];
+    //  function doubleold(numbers) {
+    //    return numbers * 2;
+    //  }
+
+
+const doubleIt =number =>number * 2;
+
+        for (const number of numbers) {
+  const result = doubleIt(number) * 2;
+  output2.push(result)          
+        }
+        console.log(output2);
+//l=loop
+//2.for each element call the provided function
+//3.result ekte array er modde push korci
+//map using
+// const output = numbers.map(doubleIt);
+// const output = numbers.map(number => number *2);
+const output = numbers.map(x => x * 2);
+
+console.log(output)
+const squares = numbers.map(x => x * x);
+console.log(squares);
+
+    </script>
+</body>
+</html>
