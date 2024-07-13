@@ -49,13 +49,14 @@
                 console.log(this.name,'Build a routine for',student);
             }
         }
-        class NeptuneDev{
-            name;
-            designation ='Student Care Web Dev';
-            address ='BD'
-            constructor(name,address){
-                this.name = name;
-                this.address = address;
+        class NeptuneDev extends TeamMember{
+         codeEditor;
+            // designation ='Student Care Web Dev';
+            // address ='BD'
+            constructor(name,address,editor){
+                super(name,address)
+                this.codeEditor = editor;
+                // this.address = address;
 
             }
             releaseapp(verstion){
@@ -73,6 +74,9 @@
         hasan.startSession()
         const rizve = new studentCare('Rizve morol', 'Mumbai');
         console.log(rizve);
+        const ahadi = new NeptuneDev('Ahadi Morol','Mumbai','Andoid studio' );
+        ahadi.releaseapp('1.4.5');
+        console.log(ahadi);
     </script>
 </body>
 </html>
